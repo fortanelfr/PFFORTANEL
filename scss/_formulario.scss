@@ -22,10 +22,11 @@
         text-align: right;
     }
 
-    input{
+    .input_contacto {
+            display: inline-block;
             font: 1em sans-serif;
         
-            width: 70%;
+            width: 100%;
             box-sizing: border-box;
         
             border: 1px solid #999;
@@ -36,9 +37,11 @@
 
 
     textarea {
+        display: inline-block;
         @extend input;
         vertical-align: top;
         height: 5em;
+        width: 100%;
         &:focus{
             border-color: #000;
         }

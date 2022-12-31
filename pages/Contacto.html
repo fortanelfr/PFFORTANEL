@@ -11,14 +11,16 @@
 <body>
     <div id="grilla">
         <header id = menu class="border">
-            <nav class="logo"><img class="imgLogo" src="../images/logo.jpg" alt=""></nav>
+            <nav class="logo"><img alt = "Palomitas y Refresco" class="imgLogo" src="../images/logo.jpg" alt=""></nav>
             <nav class = button>
-                <ul>
-                    <li><a class="buttonMenu" href="">Beneficios</a></li>
-                    <li><a class="buttonMenu" href="../pages/Historia.html">Historia</a></li>
-                    <li><a class="buttonMenu" href="">Premios</a></li>
-                    <li><a class="buttonMenu" href="../pages/Contacto.html">Contacto</a></li>
-                </ul>
+                <input class = "menu_hamburgesa" type="checkbox" id="menu_des">
+                <label for="menu_des" >☰</label>
+            <ul>
+                <li><a class="buttonMenu" href="">Beneficios</a></li>
+                <li><a class="buttonMenu" href="Historia.html">Historia</a></li>
+                <li><a class="buttonMenu" href="">Premios</a></li>
+                <li><a class="buttonMenu" href="Contacto.html">Contacto</a></li>
+            </ul>
         </nav>
         </header>
         <section id="descripcion" class="border">
@@ -26,11 +28,11 @@
                 <ul>
                  <li>
                    <label for="name">Nombre:</label>
-                   <input type="text" id="name" name="user_name">
+                   <input class = "input_contacto" type="text" id="name" name="user_name">
                  </li>
                  <li>
                    <label for="mail">Correo electrónico:</label>
-                   <input type="email" id="mail" name="user_mail">
+                   <input class = "input_contacto" type="email" id="mail" name="user_mail">
                  </li>
                  <li>
                    <label for="msg">Mensaje:</label>

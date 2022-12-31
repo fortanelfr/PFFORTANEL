@@ -93,11 +93,11 @@
           width: 100%;
           height: 100%;
     }
-  }
+}
   
   
   //Section
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 481px) {
   .container {
     position: relative;
       margin: 0 auto;
@@ -245,8 +245,7 @@
   }
 }
 
-@media screen and (max-width: 480px) {
-.carousel__thumbnails{
-    display: none;
-}
-}
+
+
+
+
