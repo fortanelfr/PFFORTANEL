@@ -126,20 +126,37 @@ footer {
   margin-left: 20%;
   font-size: x-large; }
 
-.imgContacto {
-  height: 100%;
-  width: 50%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end; }
-  .imgContacto img {
-    margin-left: 2%;
-    margin-right: 2%;
-    width: 10%;
-    height: 80%; }
-    .imgContacto img:hover {
-      transform: translate(6px, -6px); }
+@media screen and (max-width: 480px) {
+  .imgContacto {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end; }
+    .imgContacto img {
+      margin-left: 2%;
+      margin-right: 2%;
+      width: 20%;
+      height: 50%; }
+      .imgContacto img:hover {
+        transform: translate(6px, -6px); } }
+
+@media screen and (min-width: 480px) {
+  .imgContacto {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end; }
+    .imgContacto img {
+      margin-left: 2%;
+      margin-right: 2%;
+      width: 10%;
+      height: 80%; }
+      .imgContacto img:hover {
+        transform: translate(6px, -6px); } }
 
 @media screen and (max-width: 480px) {
   section#descripcion {
