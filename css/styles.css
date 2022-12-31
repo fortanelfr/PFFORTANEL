@@ -44,20 +44,18 @@ header {
   flex-direction: row;
   background-image: linear-gradient(to bottom, black, #a22020); }
 
-.logo {
-  display: flex;
-  align-items: center;
-  top: 0;
-  left: 0;
-  width: 10%;
-  height: 100%; }
-
-.imgLogo {
-  padding-left: 20%;
-  width: 80%;
-  height: 80%; }
-
 @media screen and (max-width: 480px) {
+  .logo {
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 35%;
+    height: 100%; }
+  .imgLogo {
+    padding-left: 20%;
+    width: 80%;
+    height: 80%; }
   .button {
     display: flex;
     flex-wrap: wrap;
@@ -78,6 +76,17 @@ header {
       background: #eca023; } }
 
 @media screen and (min-width: 481px) {
+  .logo {
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 100%; }
+  .imgLogo {
+    padding-left: 20%;
+    width: 80%;
+    height: 80%; }
   .button {
     display: flex;
     flex-direction: row;
