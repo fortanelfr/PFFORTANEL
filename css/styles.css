@@ -371,12 +371,25 @@ footer {
   .Resumen {
     display: flex;
     align-items: flex-end;
-    padding: 6px; } }
+    padding: 6px;
+    margin: 10px; } }
 
 @media screen and (max-width: 481px) {
   .Resumen {
     display: flex;
     flex-direction: column; } }
+
+.Imagen_Precio {
+  display: flex;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100%; }
+  .Imagen_Precio .Comparacion {
+    padding: 5%;
+    width: 80%;
+    height: 80%; }
 
 @media screen and (max-width: 480px) {
   aside {
