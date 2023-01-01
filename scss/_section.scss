@@ -246,6 +246,37 @@
   }
 }
 
+
+
+@media screen and (max-width: 481px){
+.carousel {
+    input {
+        display: none;
+    }
+}
+.carousel__slides{
+    img{
+        z-index:1;
+        display: flex;
+        position: relative;
+        width: 70%;
+        height: 70%;
+    }
+
+}
+img.ct_img{
+    display: none;
+}
+
+.carousel__thumbnails{
+    li {
+    display: none;
+}
+}
+
+}
+
+
 @media screen and (min-width: 481px){
 .Resumen {
     display: flex;

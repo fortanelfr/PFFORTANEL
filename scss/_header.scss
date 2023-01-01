@@ -72,7 +72,9 @@ header {
         top: 38%;
         width: 40%;
         list-style-type: none;
+        z-index: 2;
         .buttonMenu {
+            z-index: 2;
             display: block;
             margin: 0;
             padding: 10px;

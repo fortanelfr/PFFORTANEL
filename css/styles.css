@@ -75,8 +75,10 @@ header {
     left: 20%;
     top: 38%;
     width: 40%;
-    list-style-type: none; }
+    list-style-type: none;
+    z-index: 2; }
     .menu_hamburgesa:checked ~ ul .buttonMenu {
+      z-index: 2;
       display: block;
       margin: 0;
       padding: 10px;
@@ -366,6 +368,20 @@ footer {
       position: relative;
       width: 100%;
       height: 100%; } }
+
+@media screen and (max-width: 481px) {
+  .carousel input, .carousel .formulario textarea, .formulario .carousel textarea {
+    display: none; }
+  .carousel__slides img {
+    z-index: 1;
+    display: flex;
+    position: relative;
+    width: 70%;
+    height: 70%; }
+  img.ct_img {
+    display: none; }
+  .carousel__thumbnails li {
+    display: none; } }
 
 @media screen and (min-width: 481px) {
   .Resumen {
