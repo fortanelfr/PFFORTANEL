@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+  
     <title>Inicio</title>
   </head>
   <body class="d-flex flex-column min-vh-100">
@@ -39,61 +41,47 @@
         </div>
       </nav>
       
-      <div class="container-fluid" id="Cuerpo">
-        <div class = "texto">
-          <h1>Streaming</h1>
-          <p>El anglicismo streaming, o en español transmisión en directo, ​ retransmisión o emisión en continuo​, se refiere a la distribución digital de contenido multimedia a través de una red de computadoras, de manera que el usuario utiliza el producto a la vez que se descarga.</p>
-
-          <article>
-              <h2>Servicios más populares de Streaming</h2>
-              <p>Para finales del 2021, The CIU reportó que las plataformas de streaming con más suscriptores en el país son:</p>
-              <ul>
-                  <li>Netflix: 63.5%</li>
-                  <li>Disney+: 12.6%</li>
-                  <li>HBO Max: 9.3%</li>
-                </ul>
-          </article>
-       </div>
-        <div class="row" id="img_indice">
-          <div class="col-lg-4 mx-auto">
-            <div class="thumbnail mx-auto">
-              <a href="/w3images/lights.jpg" target="_blank">
-                <img src="../images/netflix.png" alt="Netflix" class="mx-auto d-block">
-                <div class="caption text-center">
-                  <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="thumbnail">
-              <a href="/w3images/nature.jpg" target="_blank">
-                <img src="../images/hbo.jpeg" alt="HBO" class="mx-auto d-block">
-                <div class="caption text-center">
-                  <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="thumbnail">
-              <a href="/w3images/fjords.jpg" target="_blank">
-                <img src="../images/amazon.jpg" alt="Amazon" class="mx-auto d-block">
-                <div class="caption text-center">
-                  <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
-                </div>
-              </a>
-            </div>
-          </div>
+      <div class="bd-example">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
         </div>
-        <div class = "texto">
-          <p>El anglicismo streaming, o en español transmisión en directo, ​ retransmisión o emisión en continuo​, se refiere a la distribución digital de contenido multimedia a través de una red de computadoras, de manera que el usuario utiliza el producto a la vez que se descarga.</p>
-          <p>El anglicismo streaming, o en español transmisión en directo, ​ retransmisión o emisión en continuo​, se refiere a la distribución digital de contenido multimedia a través de una red de computadoras, de manera que el usuario utiliza el producto a la vez que se descarga.</p>
-       </div>
-      </div>
-
-
-
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" href = "https://yuklife.com.mx/wp-content/uploads/2021/06/hbo-max-mexico-1-1024x576.jpg" width="800" height="400" xmlns="https://yuklife.com.mx/wp-content/uploads/2021/06/hbo-max-mexico-1-1024x576.jpg" role="img" aria-label="Placeholder: Primer slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em">Primer slide</text></svg>
+        <div class="carousel-caption d-none d-md-block">
+        <h5>Etiqueta de la primera diapositiva</h5>
+        <p>Algún contenido placeholder representativo para la primera diapositiva.</p>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Segundo slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".3em">Segundo slide</text></svg>
+        <div class="carousel-caption d-none d-md-block">
+        <h5>Etiqueta de la segunda diapositiva</h5>
+        <p>Algún contenido placeholder representativo para la segunda diapositiva.</p>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Tercer slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333" dy=".3em">Tercer slide</text></svg>
+        <div class="carousel-caption d-none d-md-block">
+        <h5>Etiqueta de la tercera diapositiva</h5>
+        <p>Algún contenido placeholder representativo para la tercera diapositiva.</p>
+        </div>
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+        </button>
+        </div>
+        </div>
+        
       <footer class="text-center text-white mt-auto" id="footer">
         <!-- Grid container -->
         <div class="container p-4 pb-0">
