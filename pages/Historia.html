@@ -1,98 +1,131 @@
-<!DOCTYPE html>
-<html lang="en">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-<body>
-    <div id="grilla" class="">
-        <header id = menu class="border">
-            <nav class="logo"><a href="../index.html"><img alt = "Palomitas y Refresco" class="imgLogo" src="../images/logo.jpg" alt=""></a></nav>
-            <nav class = button>
-                <input class = "menu_hamburgesa" type="checkbox" id="menu_des">
-                <label for="menu_des" >☰</label>
-            <ul>
-                <li><a class="buttonMenu" href="catalogo.html">Catálogo</a></li>
-                <li><a class="buttonMenu" href="Historia.html">Historia</a></li>
-                <li><a class="buttonMenu" href="precios.html">Precios</a></li>
-                <li><a class="buttonMenu" href="Contacto.html">Contacto</a></li>
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <title>Inicio</title>
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg sticky-top" id="header">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../images/logo.jpg" alt="Responsive" width="30" height="24">
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../pages/catalogo.html">Catálogo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/Historia.html">Historia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/precios.html">Precios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/Contacto.html">Contacto</a>
+              </li>
             </ul>
-        </nav>
-        </header>
-        <section id="descripcion" class="border">
-          <div class="container">
-            <div class="carousel">
-                <input class ="aux_car" type="radio" name="slides" checked="checked" id="slide-1">
-                <input class ="aux_car"  type="radio" name="slides" id="slide-2">
-                <input class ="aux_car"  type="radio" name="slides" id="slide-3">
-                <ul class="carousel__slides">
-                    <li class="carousel__slide">
-                        <figure>
-                            <div>
-                                <img src="https://cloudfront-us-east-1.images.arcpublishing.com/metroworldnews/NT33Y2HSFZC6LAFPM7THP3DBMU.jpg" alt="">
-                            </div>
-                            <figcaption>
-                                La información de Reviews.org revela que Netflix tiene casi 5 mil 500 títulos exclusivos que puedes disfrutar
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="carousel__slide">
-                        <figure>
-                            <div>
-                                <img src="https://larepublica.pe/resizer/Y6z6SMKQOS1btXi3pXB0_cm1Aeo=/480x282/top/smart/cloudfront-us-east-1.images.arcpublishing.com/gruporepublica/QG5THCGKDNGS3CIGZJN3WZ7JVA.jpg" alt="">
-                            </div>
-                            <figcaption>
-                                En la actualidad tiene un catálogo cercano a los 4.400 títulos, entre películas, series y contenidos propios, llamados Amazon Originals.                         
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="carousel__slide">
-                        <figure>
-                            <div>
-                                <img src="https://yuklife.com.mx/wp-content/uploads/2021/06/hbo-max-mexico-1-1024x576.jpg" alt="">
-                            </div>
-                            <figcaption>
-                                
-HBO Max tiene más de 2000 películas y más de 580 programas de TV disponibles para ver en el servicio de transmisión, incluida la programación original y el contenido de distribuidores externos.                  
-                            </figcaption>
-                        </figure>
-                    </li>
-                </ul>    
-                <ul class="carousel__thumbnails">
-                    <li>
-                        <label class = "ct_label" for="slide-1"><img class = "ct_img" src="https://cloudfront-us-east-1.images.arcpublishing.com/metroworldnews/NT33Y2HSFZC6LAFPM7THP3DBMU.jpg" alt=""></label>
-                    </li>
-                    <li>
-                        <label for="slide-2"><img class = "ct_img"  src="https://larepublica.pe/resizer/Y6z6SMKQOS1btXi3pXB0_cm1Aeo=/480x282/top/smart/cloudfront-us-east-1.images.arcpublishing.com/gruporepublica/QG5THCGKDNGS3CIGZJN3WZ7JVA.jpg" alt=""></label>
-                    </li>
-                    <li>
-                        <label for="slide-3"><img class = "ct_img" src="https://yuklife.com.mx/wp-content/uploads/2021/06/hbo-max-mexico-1-1024x576.jpg" alt=""></label>
-                    </li>
-                </ul>
-            </div>
+          </div>
         </div>
-        </section>
+      </nav>
+      
+      <div class="container-fluid" id="Cuerpo">
+        <div class = "texto">
+          <h1>Streaming</h1>
+          <p>El anglicismo streaming, o en español transmisión en directo, ​ retransmisión o emisión en continuo​, se refiere a la distribución digital de contenido multimedia a través de una red de computadoras, de manera que el usuario utiliza el producto a la vez que se descarga.</p>
 
-        <aside class="border">
-            <nav class="publicidad"><img src="../images/publicidad.jpeg" alt=""></nav>
-        </aside>
+          <article>
+              <h2>Servicios más populares de Streaming</h2>
+              <p>Para finales del 2021, The CIU reportó que las plataformas de streaming con más suscriptores en el país son:</p>
+              <ul>
+                  <li>Netflix: 63.5%</li>
+                  <li>Disney+: 12.6%</li>
+                  <li>HBO Max: 9.3%</li>
+                </ul>
+          </article>
+       </div>
+        <div class="row" id="img_indice">
+          <div class="col-lg-4 mx-auto">
+            <div class="thumbnail mx-auto">
+              <a href="/w3images/lights.jpg" target="_blank">
+                <img src="../images/netflix.png" alt="Netflix" class="mx-auto d-block">
+                <div class="caption text-center">
+                  <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="thumbnail">
+              <a href="/w3images/nature.jpg" target="_blank">
+                <img src="../images/hbo.jpeg" alt="HBO" class="mx-auto d-block">
+                <div class="caption text-center">
+                  <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="thumbnail">
+              <a href="/w3images/fjords.jpg" target="_blank">
+                <img src="../images/amazon.jpg" alt="Amazon" class="mx-auto d-block">
+                <div class="caption text-center">
+                  <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class = "texto">
+          <p>El anglicismo streaming, o en español transmisión en directo, ​ retransmisión o emisión en continuo​, se refiere a la distribución digital de contenido multimedia a través de una red de computadoras, de manera que el usuario utiliza el producto a la vez que se descarga.</p>
+          <p>El anglicismo streaming, o en español transmisión en directo, ​ retransmisión o emisión en continuo​, se refiere a la distribución digital de contenido multimedia a través de una red de computadoras, de manera que el usuario utiliza el producto a la vez que se descarga.</p>
+       </div>
+      </div>
 
-        <footer id = footer class="border">
-            <div class='Creditos'>
-                <p class="texto_creditos">2022 | Fernando Fortanel</p>
-            </div>
-            <div class='imgContacto'>
-                <img src="../images/linkedin.png" alt="">
-                <img src="../images/whattsapp.png" alt="">
-            </div>
-        </footer>
-   </div>
-   
-</body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+      <footer class="text-center text-white mt-auto" id="footer">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Linkedin -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #0082ca;"
+              href="https://www.linkedin.com/"
+              role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <!-- Github -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #333333;"
+              href="https://github.com/fortanelfr/PFFORTANEL"
+              role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" id="fondo">
+          © 2022 Fernando Fortanel:
+          <a class="text-white" href="https://github.com/fortanelfr/PFFORTANEL">Github</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+  </body>
 </html>

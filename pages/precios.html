@@ -1,57 +1,131 @@
-<!DOCTYPE html>
-<html lang="en">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-<body>
-    <div id="grilla">
-        <header id = menu class="border">
-            <nav class="logo"><a href="../index.html"><img alt = "Palomitas y Refresco" class="imgLogo" src="../images/logo.jpg" alt=""></a></nav>
-            <nav class = button>
-                <input class = "menu_hamburgesa" type="checkbox" id="menu_des">
-                <label for="menu_des" >☰</label>
-            <ul>
-                <li><a class="buttonMenu" href="catalogo.html">Catálogo</a></li>
-                <li><a class="buttonMenu" href="Historia.html">Historia</a></li>
-                <li><a class="buttonMenu" href="precios.html">Precios</a></li>
-                <li><a class="buttonMenu" href="Contacto.html">Contacto</a></li>
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <title>Inicio</title>
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg sticky-top" id="header">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../images/logo.jpg" alt="Responsive" width="30" height="24">
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../pages/catalogo.html">Catálogo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/Historia.html">Historia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/precios.html">Precios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/Contacto.html">Contacto</a>
+              </li>
             </ul>
-        </nav>
-        </header>
-        <section id="descripcion">
-            <div class = "General"><h1>¿Cual es el precio de cada Servicio?</h1>
-            <div class = "Resumen">
-            <div class = "texto">
-                <article>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit habitant at ante placerat viverra donec ullamcorper per litora, mauris ad elementum cum interdum vulputate sapien justo velit consequat libero iaculis mollis cubilia. Faucibus cras maecenas mus dui accumsan nostra ante vulputate dis hac, praesent placerat habitant ultricies inceptos natoque massa eget. Habitasse hac aptent dui pretium morbi fringilla id interdum dis erat, odio sollicitudin semper class himenaeos egestas nisi primis magnis massa sociosqu, eget vel suspendisse donec porttitor molestie consequat suscipit torquent.</p>
-                </article>
-            </div>
-            <div class = "Imagen_Precio">
-                <img class = "Comparacion" src="https://indiehoy.com/wp-content/uploads/2022/04/netflix-amazon-hbo-max.jpg" alt="">
-            </div>
+          </div>
         </div>
+      </nav>
+      
+      <div class="container-fluid" id="Cuerpo">
+        <div class = "texto">
+          <h1>Streaming</h1>
+          <p>El anglicismo streaming, o en español transmisión en directo, ​ retransmisión o emisión en continuo​, se refiere a la distribución digital de contenido multimedia a través de una red de computadoras, de manera que el usuario utiliza el producto a la vez que se descarga.</p>
+
+          <article>
+              <h2>Servicios más populares de Streaming</h2>
+              <p>Para finales del 2021, The CIU reportó que las plataformas de streaming con más suscriptores en el país son:</p>
+              <ul>
+                  <li>Netflix: 63.5%</li>
+                  <li>Disney+: 12.6%</li>
+                  <li>HBO Max: 9.3%</li>
+                </ul>
+          </article>
+       </div>
+        <div class="row" id="img_indice">
+          <div class="col-lg-4 mx-auto">
+            <div class="thumbnail mx-auto">
+              <a href="/w3images/lights.jpg" target="_blank">
+                <img src="../images/netflix.png" alt="Netflix" class="mx-auto d-block">
+                <div class="caption text-center">
+                  <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="thumbnail">
+              <a href="/w3images/nature.jpg" target="_blank">
+                <img src="../images/hbo.jpeg" alt="HBO" class="mx-auto d-block">
+                <div class="caption text-center">
+                  <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="thumbnail">
+              <a href="/w3images/fjords.jpg" target="_blank">
+                <img src="../images/amazon.jpg" alt="Amazon" class="mx-auto d-block">
+                <div class="caption text-center">
+                  <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
-        </section>
+        <div class = "texto">
+          <p>El anglicismo streaming, o en español transmisión en directo, ​ retransmisión o emisión en continuo​, se refiere a la distribución digital de contenido multimedia a través de una red de computadoras, de manera que el usuario utiliza el producto a la vez que se descarga.</p>
+          <p>El anglicismo streaming, o en español transmisión en directo, ​ retransmisión o emisión en continuo​, se refiere a la distribución digital de contenido multimedia a través de una red de computadoras, de manera que el usuario utiliza el producto a la vez que se descarga.</p>
+       </div>
+      </div>
 
-        <aside class="border">
-            <nav class="publicidad"><img src="../images/publicidad.jpeg" alt=""></nav>
-        </aside>
 
-        <footer id = footer class="border">
-            <div class='Creditos'>
-                <p class="texto_creditos">2022 | Fernando Fortanel</p>
-            </div>
-            <div class='imgContacto'>
-                <img src="../images/linkedin.png" alt="">
-                <img src="../images/whattsapp.png" alt="">
-            </div>
-        </footer>
-   </div>
-   
-</body>
 
+      <footer class="text-center text-white mt-auto" id="footer">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Linkedin -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #0082ca;"
+              href="https://www.linkedin.com/"
+              role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <!-- Github -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #333333;"
+              href="https://github.com/fortanelfr/PFFORTANEL"
+              role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" id="fondo">
+          © 2022 Fernando Fortanel:
+          <a class="text-white" href="https://github.com/fortanelfr/PFFORTANEL">Github</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+  </body>
 </html>

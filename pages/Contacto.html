@@ -1,65 +1,126 @@
-<!DOCTYPE html>
-<html lang="en">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<body>
-    <div id="grilla">
-        <header id = menu class="border">
-            <nav class="logo"><a href="../index.html"><img alt = "Palomitas y Refresco" class="imgLogo" src="../images/logo.jpg" alt=""></a></nav>
-            <nav class = button>
-                <input class = "menu_hamburgesa" type="checkbox" id="menu_des">
-                <label for="menu_des" >☰</label>
-            <ul>
-                <li><a class="buttonMenu" href="catalogo.html">Catálogo</a></li>
-                <li><a class="buttonMenu" href="Historia.html">Historia</a></li>
-                <li><a class="buttonMenu" href="precios.html">Precios</a></li>
-                <li><a class="buttonMenu" href="Contacto.html">Contacto</a></li>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <title>Inicio</title>
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg sticky-top" id="header">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../images/logo.jpg" alt="Responsive" width="30" height="24">
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../pages/catalogo.html">Catálogo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/Historia.html">Historia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/precios.html">Precios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/Contacto.html">Contacto</a>
+              </li>
             </ul>
-        </nav>
-        </header>
-        <section id="descripcion" class="border">
-            <form class = "formulario" action="pages/Contacto.html" method="post">
-                <ul>
-                 <li>
-                   <label for="name">Nombre:</label>
-                   <input class = "input_contacto" type="text" id="name" name="user_name">
-                 </li>
-                 <li>
-                   <label for="mail">Correo electrónico:</label>
-                   <input class = "input_contacto" type="email" id="mail" name="user_mail">
-                 </li>
-                 <li>
-                   <label for="msg">Mensaje:</label>
-                   <textarea id="msg" name="user_message"></textarea>
-                 </li>
-                 <li class="button_contacto">
-                    <button type="submit" href="">Envíe su mensaje</button>
-                  </li>
-                </ul>
-               </form>
-        </section>
-
-        <aside class="border">
-            <nav class="publicidad"><img src="../images/publicidad.jpeg" alt=""></nav>
-        </aside>
-
-        <footer id = footer class="border">
-            <div class='Creditos'>
-                <p class="texto_creditos">2022 | Fernando Fortanel</p>
+          </div>
+        </div>
+      </nav>
+      
+      
+<div class="container" id="formulario">
+	<div class="row">
+      <div class="col-md-12 col-md-offset-3" >
+        <div class="well well-sm">
+          <form class="form-horizontal" action="" method="post">
+          <fieldset>
+            <legend class="text-center">Contacto</legend>
+    
+            <!-- Name input-->
+            <div class="form-group">
+              <label id="campo" class="col-md-9 control-label mx-auto d-block" for="name">Nombre</label>
+              <div class="col-md-9 mx-auto">
+                <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
             </div>
-            <div class='imgContacto'>
-                <img src="../images/linkedin.png" alt="">
-                <img src="../images/whattsapp.png" alt="">
+    
+            <!-- Email input-->
+            <div class="form-group">
+              <label class="col-md-9 control-label mx-auto d-block" for="email">Correo Electronico</label>
+              <div class="col-md-9 mx-auto">
+                <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+              </div>
             </div>
-        </footer>
-   </div>
-   
-</body>
+    
+            <!-- Message body -->
+            <div class="form-group">
+              <label class="col-md-9 control-label mx-auto d-block" for="message">Mensaje</label>
+              <div class="col-md-9 mx-auto">
+                <textarea class="form-control" id="message" name="message" placeholder="Por favor ingrese su mensaje ..." rows="5"></textarea>
+              </div>
+            </div>
+    
+            <!-- Form actions -->
+            <div class="form-group">
+              <div class="col-md-9 text-right mx-auto ">
+                <button type="submit" class="btn btn-primary btn-lg mx-auto">Submit</button>
+              </div>
+            </div>
+          </fieldset>
+          </form>
+        </div>
+      </div>
+	</div>
+</div>
 
+
+
+      <footer class="text-center text-white mt-auto" id="footer">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Linkedin -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #0082ca;"
+              href="https://www.linkedin.com/"
+              role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <!-- Github -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #333333;"
+              href="https://github.com/fortanelfr/PFFORTANEL"
+              role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" id="fondo">
+          © 2022 Fernando Fortanel:
+          <a class="text-white" href="https://github.com/fortanelfr/PFFORTANEL">Github</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+  </body>
 </html>
