@@ -30,8 +30,35 @@ body{
 }
 
 
+#carousel{
+  margin: 10px;
+  transition:.5s ease-in-out left;
+  @media screen and (min-width: 768px) {
+    img {
+    width: 700px !important;
+    height: auto;
+    }
+  }
 
+  @media screen and (min-width: 481px) , (max-width: 768) {
+    img {
+        width: 350px;
+        height: auto;
+        }
+    }
 
+  @media screen and (max-width: 481px) {
+      img {
+          width: 280px;
+          height: auto;
+    }
+  }
+
+}
+
+#texto {
+  color: white;
+}
 
 #formulario {
   margin-top: 10px;
@@ -59,6 +86,9 @@ body{
     background-color: black;
   }
 }
+
+
+
 
 
 
