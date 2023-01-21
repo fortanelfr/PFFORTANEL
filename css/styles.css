@@ -1,6 +1,7 @@
 body {
   background-color: #2D2C2C; }
 
+/* Formato de menu de navegacion */
 #header {
   background-image: linear-gradient(to bottom, #300101, #a22020); }
   #header .navbar-brand {
@@ -15,6 +16,7 @@ body {
   #header .navbar-nav li a {
     color: white; }
 
+/* Formato del carusel de la pagina Historia */
 #carousel {
   margin: 10px;
   transition: .5s ease-in-out left; }
@@ -31,6 +33,14 @@ body {
       width: 280px;
       height: auto; } }
 
+/* Formato del contenido de la pagina Precios */
+#precio {
+  color: white;
+  margin: auto; }
+  #precio img {
+    width: 100%;
+    height: auto; }
+
 #texto {
   color: white; }
 
@@ -40,6 +50,7 @@ body {
   #formulario #campo {
     margin-left: auto !important; }
 
+/* Formato del contenido de la pagina Index */
 #Cuerpo {
   margin-top: 10px;
   color: white; }
@@ -48,6 +59,7 @@ body {
     height: 160px;
     width: 210px; }
 
+/* Formato del contenido de Footer*/
 #footer {
   background-color: rgba(0, 0, 0, 0.5); }
   #footer #fondo {

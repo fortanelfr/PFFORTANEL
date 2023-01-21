@@ -2,6 +2,7 @@ body{
   background-color: #2D2C2C;
 }
 
+/* Formato de menu de navegacion */
 #header {
   background-image:  linear-gradient(to bottom, rgb(48, 1, 1), #a22020);
 
@@ -30,6 +31,7 @@ body{
 }
 
 
+/* Formato del carusel de la pagina Historia */
 #carousel{
   margin: 10px;
   transition:.5s ease-in-out left;
@@ -56,6 +58,16 @@ body{
 
 }
 
+/* Formato del contenido de la pagina Precios */
+#precio {
+  color: white;
+  margin:auto;
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+
 #texto {
   color: white;
 }
@@ -69,7 +81,7 @@ body{
 }
 
 
-
+/* Formato del contenido de la pagina Index */
 #Cuerpo {
   margin-top: 10px;
   color: white;
@@ -80,6 +92,8 @@ body{
   }
 }
 
+
+/* Formato del contenido de Footer*/
 #footer {
   background-color: rgba(0, 0,0,.5);
   #fondo {
